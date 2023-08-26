@@ -6,10 +6,6 @@
 #include <float.h>
 #include <math.h>
 
-#include <mpi.h>
-
-#include "mpi_size_t.h"
-
 typedef struct coord {
   float x;
   float y;
@@ -302,29 +298,11 @@ void check_input(float mutation_prob, size_t pop_size, float migration_prob, siz
 }
 
 int main(int argc, char *argv[]) {
-  int id,ntasks,rc;
-  MPI_Status status;
-
-  rc=MPI_Init(&argc,&argv);
-  if (rc != MPI_SUCCESS) {
-    printf("MPI initialization failed\n");
-    exit(1);
-  }
-  rc=MPI_Comm_size(MPI_COMM_WORLD,&ntasks);
-  rc=MPI_Comm_rank(MPI_COMM_WORLD,&id);
-
-  /* create a type for struct cords */
-  const int nitems = 2;
-  int          blocklengths[2] = {1,1};
-  MPI_Datatype types[2] = {MPI_FLOAT, MPI_FLOAT};
-  MPI_Datatype mpi_coord_type;
-  MPI_Aint     offsets[2];
+  int id=0,ntasks=1,rc;
   
-  offsets[0] = offsetof(coord, x);
-  offsets[1] = offsetof(coord, y);
-  
-  MPI_Type_create_struct(nitems, blocklengths, offsets, types, &mpi_coord_type);
-  MPI_Type_commit(&mpi_coord_type);
+  // offsets[0] = offsetof(coord, x);
+  // offsets[1] = offsetof(coord, y);  
+
 
   // Input values
   float mutation_prob;
@@ -336,38 +314,37 @@ int main(int argc, char *argv[]) {
   size_t n_cities;
   coord *coords;
 
-  if (id == 0) {
-    // Process 0 will handle reading the input.
-    char* infile = argv[1];
-    mutation_prob = atof(argv[2]);
-    n_generations = atoi(argv[3]);
-    pop_size = atoi(argv[4]);
-    migration_prob = atof(argv[5]);
-    migration_size = atof(argv[6]);
+  
+  // Process 0 will handle reading the input.
+  char* infile = argv[1];
+  mutation_prob = atof(argv[2]);
+  n_generations = atoi(argv[3]);
+  pop_size = atoi(argv[4]);
+  migration_prob = atof(argv[5]);
+  migration_size = atof(argv[6]);
 
-    if (argc < 7) {
-      printf("Usage: tsp <mutation probability, float> <n generations, size_t> <population size, size_t> <migration probability, float> <migration size, size_t>\n");
-      rc=MPI_Finalize();
-      exit(1);
-    }
-    check_input(mutation_prob, pop_size, migration_prob, migration_size);
+  if (argc < 7) {
+    printf("Usage: tsp <mutation probability, float> <n generations, size_t> <population size, size_t> <migration probability, float> <migration size, size_t>\n");    
+    exit(1);
+  }
+  check_input(mutation_prob, pop_size, migration_prob, migration_size);
 
-    // Check how many cities there are and read in their coordinates
-    n_cities = CountLines(infile);
-    coords = malloc(n_cities * sizeof(coord));
-    ReadCoords(infile, n_cities, coords);
-  }
-  // Broadcast the values from the command line and those that were read in.
-  MPI_Bcast(&mutation_prob, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
-  MPI_Bcast(&n_generations, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  MPI_Bcast(&pop_size, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  MPI_Bcast(&migration_prob, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
-  MPI_Bcast(&migration_size, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  MPI_Bcast(&n_cities, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  if (id > 0) {
-    coords = malloc(n_cities * sizeof(coord));
-  }
-  MPI_Bcast(coords, n_cities, mpi_coord_type, 0, MPI_COMM_WORLD);
+  // Check how many cities there are and read in their coordinates
+  n_cities = CountLines(infile);
+  coords = malloc(n_cities * sizeof(coord));
+  ReadCoords(infile, n_cities, coords);
+  
+  // // Broadcast the values from the command line and those that were read in.
+  // MPI_Bcast(&mutation_prob, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
+  // MPI_Bcast(&n_generations, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
+  // MPI_Bcast(&pop_size, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
+  // MPI_Bcast(&migration_prob, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
+  // MPI_Bcast(&migration_size, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
+  // MPI_Bcast(&n_cities, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
+  // if (id > 0) {
+  //   coords = malloc(n_cities * sizeof(coord));
+  // }
+  // MPI_Bcast(coords, n_cities, mpi_coord_type, 0, MPI_COMM_WORLD);
 
   // Initialize a population from random paths
   unsigned short *pops[pop_size];
@@ -381,6 +358,7 @@ int main(int argc, char *argv[]) {
   for (size_t j = 0; j < pop_size; ++j)
     new_pops[j] = (unsigned short*)malloc(n_cities * sizeof(unsigned short));
 
+  int has_immigrants = 0;
   for (size_t i = 0; i < n_generations; ++i) {
     // Check pops want to emigrate
     if (rand_p() < migration_prob) {
@@ -388,7 +366,7 @@ int main(int argc, char *argv[]) {
       unsigned short *data = (unsigned short *)malloc(migration_size*n_cities*sizeof(unsigned short));
       unsigned short **emigrants= (unsigned short **)malloc(migration_size*sizeof(unsigned short*));
       for (size_t i = 0; i < migration_size; ++i)
-	emigrants[i] = &(data[n_cities*i]);
+	      emigrants[i] = &(data[n_cities*i]);
 
       // Randomly select the emigrants (weight by inverse of the fitness)
       w_select_emigrants(pops, pop_size, migration_size, coords, n_cities, emigrants);
@@ -397,28 +375,29 @@ int main(int argc, char *argv[]) {
       bool prev = (rand() % 2) == 1;
       size_t target_id = (prev ? id - 1 : id + 1);
       if (prev && id == 0) {
-	target_id = ntasks - 1;
+	      target_id = ntasks - 1;
       } else if (!prev && id == ntasks - 1) {
-	target_id = 0;
+	      target_id = 0;
       }
-      MPI_Request req;
-      MPI_Isend(&(emigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, target_id, 42, MPI_COMM_WORLD, &req);
-      free(emigrants);
+      has_immigrants = 1;
+      // MPI_Request req;
+      // MPI_Isend(&(emigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, target_id, 42, MPI_COMM_WORLD, &req);
+      
     }
 
     // Check if some pops want to immigrate
-    MPI_Status status;
-    int has_immigrants = 0;
-    MPI_Iprobe(MPI_ANY_SOURCE, 42, MPI_COMM_WORLD, &has_immigrants, &status);
+    // MPI_Status status;
+    
+    // MPI_Iprobe(MPI_ANY_SOURCE, 42, MPI_COMM_WORLD, &has_immigrants, &status);
     if (has_immigrants) {
       unsigned short *data = (unsigned short *)malloc(migration_size*n_cities*sizeof(unsigned short));
       unsigned short **immigrants= (unsigned short **)malloc(migration_size*sizeof(unsigned short*));
       for (size_t i = 0; i < migration_size; ++i)
-	immigrants[i] = &(data[n_cities*i]);
+	      immigrants[i] = &(data[n_cities*i]);
 
-      MPI_Recv(&(immigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, status.MPI_SOURCE, status.MPI_TAG, MPI_COMM_WORLD, &status);
+      // MPI_Recv(&(immigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, status.MPI_SOURCE, status.MPI_TAG, MPI_COMM_WORLD, &status);
 
-      // Replace the 100 most unfit pops with the immigrants
+      // // Replace the 100 most unfit pops with the immigrants
       immigration(pops, migration_size, n_cities, pop_size, coords, immigrants);
       free(immigrants);
     }
@@ -428,15 +407,15 @@ int main(int argc, char *argv[]) {
       size_t parent_a = j;
       // Can't mate with self.
       while (j == parent_a)
-  	parent_a = rand() % pop_size;
+  	    parent_a = rand() % pop_size;
       breed(pops[parent_a], pops[j], coords, n_cities, new_pops[j]);
 
       // Introduce a mutation with probability mutation_p
       float mutate_p = rand_p();
       //      if (rand_p() < mutation_prob)
       while (mutate_p < mutation_prob) {
-  	mutate(new_pops[j], n_cities);
-	mutate_p = rand_p();
+        mutate(new_pops[j], n_cities);
+        mutate_p = rand_p();
       }
     }
     // Select the fit individuals to populate the next generation
@@ -459,7 +438,7 @@ int main(int argc, char *argv[]) {
   if (id == 0) {
     sub_fits = malloc(sizeof(float) * ntasks);
   }
-  MPI_Gather(&best_fit, 1, MPI_FLOAT, sub_fits, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
+  //MPI_Gather(&best_fit, 1, MPI_FLOAT, sub_fits, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
 
   size_t best_task_id = 0;
   if (id == 0) {
@@ -472,19 +451,18 @@ int main(int argc, char *argv[]) {
     }
     free(sub_fits);
   }
-  MPI_Bcast(&best_task_id, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
+  //MPI_Bcast(&best_task_id, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
 
-  if (id == best_task_id) {
-    printf("Fitness of the best route found is %f.\n", best_fit);
-    printf("The best route found is ");
-    for (size_t i = 0; i < n_cities; ++i) {
-      printf("%d", pops[my_best_path[0]][i]);
-      if (i < n_cities - 1)
-	printf(",");
+    if (id == best_task_id) {
+      printf("Fitness of the best route found is %f.\n", best_fit);
+      printf("The best route found is ");
+      for (size_t i = 0; i < n_cities; ++i) {
+        printf("%d", pops[my_best_path[0]][i]);
+        if (i < n_cities - 1)
+          printf(",");
     }
     printf(".\n");
   }
-
-  rc = MPI_Finalize();
+  
   return 0;
 }
