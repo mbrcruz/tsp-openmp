@@ -1,7 +1,10 @@
-GCC=gcc
 CCFLAGS=-O3
-LDFLAGS=-lm -O3
+LDFLAGS=-L/usr/lib/x86_64-linux-gnu/ -lm  -O3
 CC=gcc
+
+debug: tsp-openmp
+CCFLAGS=-g
+LDFLAGS=-L/usr/lib/x86_64-linux-gnu/ -lm -g
 
 all: tsp-openmp
 

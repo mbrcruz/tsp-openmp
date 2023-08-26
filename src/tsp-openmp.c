@@ -97,14 +97,14 @@ void breed(unsigned short* a, unsigned short* b, coord* coords, size_t n_cities,
       // ascending order that has not been visited
       bool *have_visited = malloc(n_cities * sizeof(bool));
       for (size_t j = 0; j < n_cities; ++j) {
-	have_visited[j] = false;
+	      have_visited[j] = false;
       }
       for (size_t j = 0; j < i; ++j) {
-	have_visited[child[j]] = true;
+	      have_visited[child[j]] = true;
       }
       size_t j = 0;
       while (have_visited[j])
-	++j;
+	      ++j;
       next_city = j;
       free(have_visited);
     }
@@ -253,7 +253,7 @@ int w_srand(float *weights, size_t n_weights) {
   for (size_t i = 0; i < n_weights; ++i) {
     sum += 1.0/weights[i];
   }
-  int max = ceil(sum);
+  int max = ceil(sum);  
   int rn = rand() % max;
   for (size_t i = 0; i < n_weights; ++i) {
     if (rn < 1.0/weights[i])
@@ -298,10 +298,8 @@ void check_input(float mutation_prob, size_t pop_size, float migration_prob, siz
 }
 
 int main(int argc, char *argv[]) {
-  int id=0,ntasks=1,rc;
+  int id=0,ntasks=1;  
   
-  // offsets[0] = offsetof(coord, x);
-  // offsets[1] = offsetof(coord, y);  
 
 
   // Input values
@@ -434,35 +432,34 @@ int main(int argc, char *argv[]) {
   printf("Process %d has a final best fitness of %f.\n", id, best_fit);
 
   // Process 0 will find the best fitness overall
-  float *sub_fits = NULL;
-  if (id == 0) {
-    sub_fits = malloc(sizeof(float) * ntasks);
-  }
+  // float *sub_fits = NULL;
+  // if (id == 0) {
+  //   sub_fits = malloc(sizeof(float) * ntasks);
+  // }
   //MPI_Gather(&best_fit, 1, MPI_FLOAT, sub_fits, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
 
-  size_t best_task_id = 0;
-  if (id == 0) {
-    float best_fitness = FLT_MAX;
-    for (size_t i = 0; i < ntasks; ++i) {
-      if (best_fitness > sub_fits[i]) {
-	best_fitness = sub_fits[i];
-	best_task_id = i;
-      }
-    }
-    free(sub_fits);
-  }
+  // size_t best_task_id = 0;
+  // if (id == 0) {
+  //   float best_fitness = FLT_MAX;
+  //   for (size_t i = 0; i < ntasks; ++i) {
+  //     if (best_fitness > sub_fits[i]) {
+	//       best_fitness = sub_fits[i];
+	//       best_task_id = i;
+  //     }
+  //   }
+  //   free(sub_fits);
+  // }
   //MPI_Bcast(&best_task_id, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-
-    if (id == best_task_id) {
-      printf("Fitness of the best route found is %f.\n", best_fit);
-      printf("The best route found is ");
-      for (size_t i = 0; i < n_cities; ++i) {
-        printf("%d", pops[my_best_path[0]][i]);
-        if (i < n_cities - 1)
-          printf(",");
-    }
-    printf(".\n");
-  }
+  //if (id == best_task_id) {
+  printf("Fitness of the best route found is %f.\n", best_fit);
+  printf("The best route found is ");
+  for (size_t i = 0; i < n_cities; ++i) {
+    printf("%d", pops[my_best_path[0]][i]);
+    if (i < n_cities - 1)
+      printf(",");
+  } 
+  printf(".\n");
+  //}
   
   return 0;
 }
