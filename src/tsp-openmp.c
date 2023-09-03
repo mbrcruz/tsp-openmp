@@ -5,6 +5,7 @@
 #include <stdbool.h>
 #include <float.h>
 #include <math.h>
+#include <omp.h>
 
 typedef struct coord {
   float x;
@@ -301,6 +302,10 @@ int main(int argc, char *argv[]) {
   int id=0,ntasks=1;  
   
 
+  //shared points
+  size_t *v_my_best_path;
+  float *v_best_fit;
+
 
   // Input values
   float mutation_prob;
@@ -331,135 +336,135 @@ int main(int argc, char *argv[]) {
   n_cities = CountLines(infile);
   coords = malloc(n_cities * sizeof(coord));
   ReadCoords(infile, n_cities, coords);
-  
-  // // Broadcast the values from the command line and those that were read in.
-  // MPI_Bcast(&mutation_prob, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
-  // MPI_Bcast(&n_generations, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  // MPI_Bcast(&pop_size, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  // MPI_Bcast(&migration_prob, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
-  // MPI_Bcast(&migration_size, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  // MPI_Bcast(&n_cities, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  // if (id > 0) {
-  //   coords = malloc(n_cities * sizeof(coord));
-  // }
-  // MPI_Bcast(coords, n_cities, mpi_coord_type, 0, MPI_COMM_WORLD);
-
-  // Initialize a population from random paths
-  unsigned short *pops[pop_size];
-  for (size_t i = 0; i < pop_size; ++i)
-    pops[i] = (unsigned short*)malloc(n_cities * sizeof(unsigned short));
-  srand(time(0) + id); // different seed for each process
-  for (size_t i = 0; i < pop_size; ++i)
-    InitPath(n_cities, pops[i]);
-
-  unsigned short *new_pops[pop_size];
-  for (size_t j = 0; j < pop_size; ++j)
-    new_pops[j] = (unsigned short*)malloc(n_cities * sizeof(unsigned short));
-
-  int has_immigrants = 0;
-  for (size_t i = 0; i < n_generations; ++i) {
-    // Check pops want to emigrate
-    if (rand_p() < migration_prob) {
-      // Emigrants and immigrants need to be allocated contiguously for MPI
-      unsigned short *data = (unsigned short *)malloc(migration_size*n_cities*sizeof(unsigned short));
-      unsigned short **emigrants= (unsigned short **)malloc(migration_size*sizeof(unsigned short*));
-      for (size_t i = 0; i < migration_size; ++i)
-	      emigrants[i] = &(data[n_cities*i]);
-
-      // Randomly select the emigrants (weight by inverse of the fitness)
-      w_select_emigrants(pops, pop_size, migration_size, coords, n_cities, emigrants);
-
-      // Send to either the next or the previous process
-      bool prev = (rand() % 2) == 1;
-      size_t target_id = (prev ? id - 1 : id + 1);
-      if (prev && id == 0) {
-	      target_id = ntasks - 1;
-      } else if (!prev && id == ntasks - 1) {
-	      target_id = 0;
-      }
-      has_immigrants = 1;
-      // MPI_Request req;
-      // MPI_Isend(&(emigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, target_id, 42, MPI_COMM_WORLD, &req);
-      
-    }
-
-    // Check if some pops want to immigrate
-    // MPI_Status status;
+  #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks)
+  {
+    // Initialize a population from random paths
     
-    // MPI_Iprobe(MPI_ANY_SOURCE, 42, MPI_COMM_WORLD, &has_immigrants, &status);
-    if (has_immigrants) {
-      unsigned short *data = (unsigned short *)malloc(migration_size*n_cities*sizeof(unsigned short));
-      unsigned short **immigrants= (unsigned short **)malloc(migration_size*sizeof(unsigned short*));
-      for (size_t i = 0; i < migration_size; ++i)
-	      immigrants[i] = &(data[n_cities*i]);
+    id = omp_get_thread_num();
+    ntasks=omp_get_num_threads();
+    printf("Numero de thread %d\n", id);
+    v_my_best_path = malloc(sizeof(size_t) * ntasks);
+    v_best_fit = malloc(sizeof(size_t) * ntasks);
 
-      // MPI_Recv(&(immigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, status.MPI_SOURCE, status.MPI_TAG, MPI_COMM_WORLD, &status);
+    unsigned short *pops[pop_size];
+    for (size_t i = 0; i < pop_size; ++i)
+    pops[i] = (unsigned short*)malloc(n_cities * sizeof(unsigned short));
+    srand(time(0) + id); // different seed for each process
+    for (size_t i = 0; i < pop_size; ++i)
+      InitPath(n_cities, pops[i]);
 
-      // // Replace the 100 most unfit pops with the immigrants
-      immigration(pops, migration_size, n_cities, pop_size, coords, immigrants);
-      free(immigrants);
+    unsigned short *new_pops[pop_size];
+    for (size_t j = 0; j < pop_size; ++j)
+      new_pops[j] = (unsigned short*)malloc(n_cities * sizeof(unsigned short));
+
+    int has_immigrants = 0;
+    unsigned short **emigrants; 
+    
+    #pragma omp for
+    for (size_t i = 0; i < n_generations; ++i) {
+      id = omp_get_thread_num();
+      if ( i % 1000 == 0)
+        printf("Numero de thread %d - generation = %d\n", id , i);
+      
+      // Check pops want to emigrate
+      if (rand_p() < migration_prob) {
+        // Emigrants and immigrants need to be allocated contiguously for MPI
+        unsigned short *data = (unsigned short *)malloc(migration_size*n_cities*sizeof(unsigned short));
+        emigrants= (unsigned short **)malloc(migration_size*sizeof(unsigned short*));
+        for (size_t i = 0; i < migration_size; ++i)
+          emigrants[i] = &(data[n_cities*i]);
+
+        // Randomly select the emigrants (weight by inverse of the fitness)
+        w_select_emigrants(pops, pop_size, migration_size, coords, n_cities, emigrants);
+
+        // Send to either the next or the previous process
+        bool prev = (rand() % 2) == 1;
+        size_t target_id = (prev ? id - 1 : id + 1);
+        if (prev && id == 0) {
+          target_id = ntasks - 1;
+        } else if (!prev && id == ntasks - 1) {
+          target_id = 0;
+        }
+        has_immigrants = 1;
+        // MPI_Request req;
+        // MPI_Isend(&(emigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, target_id, 42, MPI_COMM_WORLD, &req);
+        
+      }
+
+      // Check if some pops want to immigrate
+      // MPI_Status status;
+      
+      // MPI_Iprobe(MPI_ANY_SOURCE, 42, MPI_COMM_WORLD, &has_immigrants, &status);
+      if (has_immigrants) {
+        //unsigned short *data = (unsigned short *)malloc(migration_size*n_cities*sizeof(unsigned short));
+        //unsigned short **immigrants= emigrants;
+        // for (size_t i = 0; i < migration_size; ++i)
+        //   immigrants[i] = &(data[n_cities*i]);
+
+        // MPI_Recv(&(immigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, status.MPI_SOURCE, status.MPI_TAG, MPI_COMM_WORLD, &status);
+
+        // // Replace the 100 most unfit pops with the immigrants
+        immigration(pops, migration_size, n_cities, pop_size, coords, emigrants);
+        free(emigrants);
+      }
+
+      
+      for (size_t j = 0; j < pop_size; ++j) {
+        // Cross self with a randomly selected pop
+        size_t parent_a = j;
+        // Can't mate with self.
+        while (j == parent_a)
+          parent_a = rand() % pop_size;
+        breed(pops[parent_a], pops[j], coords, n_cities, new_pops[j]);
+
+        // Introduce a mutation with probability mutation_p
+        float mutate_p = rand_p();
+        //      if (rand_p() < mutation_prob)
+        while (mutate_p < mutation_prob) {
+          mutate(new_pops[j], n_cities);
+          mutate_p = rand_p();
+        }
+      }
+      // Select the fit individuals to populate the next generation
+      selection(pops, new_pops, pop_size, coords, n_cities);
+
+      //Uncomment for periodic updates
+      // if ((i % 100) == 0) {
+      //   printf("Process %d generation %zu\t", id, i + 1);
+      //   FitnessStatus(pops, coords, pop_size, n_cities);
+      // }      
     }
-
-    for (size_t j = 0; j < pop_size; ++j) {
-      // Cross self with a randomly selected pop
-      size_t parent_a = j;
-      // Can't mate with self.
-      while (j == parent_a)
-  	    parent_a = rand() % pop_size;
-      breed(pops[parent_a], pops[j], coords, n_cities, new_pops[j]);
-
-      // Introduce a mutation with probability mutation_p
-      float mutate_p = rand_p();
-      //      if (rand_p() < mutation_prob)
-      while (mutate_p < mutation_prob) {
-        mutate(new_pops[j], n_cities);
-        mutate_p = rand_p();
+      id = omp_get_thread_num();    
+      size_t my_best_path[1];
+      my_best_path[0] = 0;
+      float best_fit = BestFit(pops, coords, pop_size, n_cities, my_best_path);    
+      v_best_fit[id]= best_fit;
+      printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
+      v_my_best_path[id]= my_best_path[0];   
+    } 
+    size_t my_best_path[1];
+    my_best_path[0] = 0;
+    int best_id=0;
+    printf("tasks=%d\n", ntasks);
+    for(int i=0;i<ntasks;i++){
+      if ( v_best_fit[i] < v_best_fit[best_id]){
+        best_id=i;
+        printf("bestid=%d\n", i);
       }
     }
-    // Select the fit individuals to populate the next generation
-    selection(pops, new_pops, pop_size, coords, n_cities);
+    my_best_path[0] = v_my_best_path[best_id];
+    printf("best id=%d - the bestfit=%f \n", best_id , v_best_fit[best_id]);
 
-    // Uncomment for periodic updates
-    // if ((i % 100) == 0) {
-    //   printf("Process %d generation %zu\t", id, i + 1);
-    //   FitnessStatus(pops, coords, pop_size, n_cities);
-    // }
-  }
-  size_t my_best_path[1];
-  my_best_path[0] = 0;
-  float best_fit = BestFit(pops, coords, pop_size, n_cities, my_best_path);
-
-  printf("Process %d has a final best fitness of %f.\n", id, best_fit);
-
-  // Process 0 will find the best fitness overall
-  // float *sub_fits = NULL;
-  // if (id == 0) {
-  //   sub_fits = malloc(sizeof(float) * ntasks);
-  // }
-  //MPI_Gather(&best_fit, 1, MPI_FLOAT, sub_fits, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
-
-  // size_t best_task_id = 0;
-  // if (id == 0) {
-  //   float best_fitness = FLT_MAX;
-  //   for (size_t i = 0; i < ntasks; ++i) {
-  //     if (best_fitness > sub_fits[i]) {
-	//       best_fitness = sub_fits[i];
-	//       best_task_id = i;
-  //     }
-  //   }
-  //   free(sub_fits);
-  // }
-  //MPI_Bcast(&best_task_id, 1, my_MPI_SIZE_T, 0, MPI_COMM_WORLD);
-  //if (id == best_task_id) {
-  printf("Fitness of the best route found is %f.\n", best_fit);
-  printf("The best route found is ");
-  for (size_t i = 0; i < n_cities; ++i) {
-    printf("%d", pops[my_best_path[0]][i]);
-    if (i < n_cities - 1)
-      printf(",");
-  } 
-  printf(".\n");
-  //}
+    printf("Process %d has a final best fitness of %f.\n", best_id, v_best_fit[best_id]);   
+    printf("Fitness of the best route found is %f.\n", v_best_fit[best_id]);
+    printf("The best route found is ");
+    // for (size_t i = 0; i < n_cities; ++i) {
+    //   printf("%d", pops[my_best_path[0]][i]);
+    //   if (i < n_cities - 1)
+    //     printf(",");
+    // } 
+    // printf(".\n");
+  
   
   return 0;
 }
