@@ -363,7 +363,8 @@ int main(int argc, char *argv[]) {
     unsigned short **emigrants; 
     
     #pragma omp for
-    for (size_t i = 0; i < n_generations; ++i) {
+    for (size_t i = 0; i < n_generations; ++i) 
+    {
       id = omp_get_thread_num();
       if ( i % 1000 == 0)
         printf("Numero de thread %d - generation = %d\n", id , i);
@@ -436,37 +437,37 @@ int main(int argc, char *argv[]) {
       //   FitnessStatus(pops, coords, pop_size, n_cities);
       // }      
     }
-      id = omp_get_thread_num();    
-      size_t my_best_path[1];
-      my_best_path[0] = 0;
-      float best_fit = BestFit(pops, coords, pop_size, n_cities, my_best_path);    
-      v_best_fit[id]= best_fit;
-      printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
-      v_my_best_path[id]= my_best_path[0];   
-    } 
+    id = omp_get_thread_num();    
     size_t my_best_path[1];
     my_best_path[0] = 0;
-    int best_id=0;
-    printf("tasks=%d\n", ntasks);
-    for(int i=0;i<ntasks;i++){
-      if ( v_best_fit[i] < v_best_fit[best_id]){
-        best_id=i;
-        printf("bestid=%d\n", i);
-      }
+    float best_fit = BestFit(pops, coords, pop_size, n_cities, my_best_path);    
+    v_best_fit[id]= best_fit;
+    printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
+    v_my_best_path[id]= my_best_path[0];   
+  } 
+  size_t my_best_path[1];
+  my_best_path[0] = 0;
+  int best_id=0;
+  printf("tasks=%d\n", ntasks);
+  for(int i=0;i<ntasks;i++){
+    if ( v_best_fit[i] < v_best_fit[best_id]){
+      best_id=i;
+      printf("bestid=%d\n", i);
     }
-    my_best_path[0] = v_my_best_path[best_id];
-    printf("best id=%d - the bestfit=%f \n", best_id , v_best_fit[best_id]);
+  }
+  my_best_path[0] = v_my_best_path[best_id];
+  printf("best id=%d - the bestfit=%f \n", best_id , v_best_fit[best_id]);
 
-    printf("Process %d has a final best fitness of %f.\n", best_id, v_best_fit[best_id]);   
-    printf("Fitness of the best route found is %f.\n", v_best_fit[best_id]);
-    printf("The best route found is ");
-    // for (size_t i = 0; i < n_cities; ++i) {
-    //   printf("%d", pops[my_best_path[0]][i]);
-    //   if (i < n_cities - 1)
-    //     printf(",");
-    // } 
-    // printf(".\n");
-  
+  printf("Process %d has a final best fitness of %f.\n", best_id, v_best_fit[best_id]);   
+  printf("Fitness of the best route found is %f.\n", v_best_fit[best_id]);
+  printf("The best route found is ");
+  // for (size_t i = 0; i < n_cities; ++i) {
+  //   printf("%d", pops[my_best_path[0]][i]);
+  //   if (i < n_cities - 1)
+  //     printf(",");
+  // } 
+  // printf(".\n");
+
   
   return 0;
 }
