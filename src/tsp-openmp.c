@@ -341,10 +341,12 @@ int main(int argc, char *argv[]) {
     // Initialize a population from random paths
     
     id = omp_get_thread_num();
-    ntasks=omp_get_num_threads();
-    printf("Numero de thread %d\n", id);
-    v_my_best_path = malloc(sizeof(size_t) * ntasks);
-    v_best_fit = malloc(sizeof(size_t) * ntasks);
+    if ( id == 0){
+      ntasks=omp_get_num_threads();
+      printf("Numero de thread %d\n", id);
+      v_my_best_path = malloc(sizeof(size_t) * ntasks);
+      v_best_fit = malloc(sizeof(size_t) * ntasks);
+    }    
 
     unsigned short *pops[pop_size];
     for (size_t i = 0; i < pop_size; ++i)

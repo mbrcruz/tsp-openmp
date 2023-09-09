@@ -1,5 +1,5 @@
-CCFLAGS=-O3
-#CCFLAGS=-fopenmp -O3
+#CCFLAGS=-O3
+CCFLAGS=-fopenmp -O3
 #CCFLAGS=-g
 LDFLAGS=-L/usr/lib/x86_64-linux-gnu/ -lm -fopenmp  -O3
 CC=gcc
