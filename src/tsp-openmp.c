@@ -96,7 +96,7 @@ void breed(unsigned short* a, unsigned short* b, coord* coords, size_t n_cities,
     if (IsInPath(child, next_city, i)) {
       // If the city has been visited, then find the first city in
       // ascending order that has not been visited
-      bool *have_visited = malloc(n_cities * sizeof(bool));
+      bool *have_visited = (bool *)malloc(n_cities * sizeof(bool));
       for (size_t j = 0; j < n_cities; ++j) {
 	      have_visited[j] = false;
       }
@@ -187,12 +187,12 @@ int cmp_ptr(const void *a, const void *b) {
 
 size_t * order_float(const float *a, size_t n) {
   // Find the (descending) order in an array of floats using qsorts and return the indices rather than the ordered values.
-    const float **pointers = malloc(n * sizeof(const float *));
+    const float **pointers = (const float **)malloc(n * sizeof(const float *));
     for (size_t i = 0; i < n; i++)
       pointers[i] = a + i;
 
     qsort(pointers, n, sizeof(const float *), cmp_ptr);
-    size_t *indices = malloc(n * sizeof(size_t));
+    size_t *indices = (size_t *)malloc(n * sizeof(size_t));
     for (size_t i = 0; i < n; i++)
       indices[i] = pointers[i] - a;
 
@@ -204,7 +204,7 @@ void selection(unsigned short* old_pops[], unsigned short* new_pops[], unsigned 
   // Select the most fit individuals from both the old and new pops to survive to the next generation.
 
   // First calculate fitness for both populationms
-  float *fits = malloc(2 * pop_size * sizeof(float));
+  float *fits = (float *) malloc(2 * pop_size * sizeof(float));
   for (size_t i = 0; i < pop_size; ++i) {
     fits[2*i] = pathlen(coords, old_pops[i], n_cities);
     fits[2*i + 1] = pathlen(coords, new_pops[i], n_cities);
@@ -234,7 +234,7 @@ void immigration(unsigned short* pops[], size_t migration_size, size_t n_cities,
   // Integrate the emigrants into pops by wiping out the 100 most unfit individuals.
 
   // Calculate fitness for the population
-  float *fits = malloc(pop_size * sizeof(float));
+  float *fits = (float *) malloc(pop_size * sizeof(float));
   for (size_t i = 0; i < pop_size; ++i) {
     fits[i] = pathlen(coords, pops[i], n_cities);
   }
@@ -268,7 +268,7 @@ void w_select_emigrants(unsigned short *pops[], unsigned short pop_size, size_t 
   // Select pops for emigration, weighted by their inverse-fitness.
 
   // Calculate fitness
-  float *fits = malloc(pop_size * sizeof(float));
+  float *fits = (float *) malloc(pop_size * sizeof(float));
   for (size_t i = 0; i < pop_size; ++i) {
     fits[i] = pathlen(coords, pops[i], n_cities);
   }
@@ -334,7 +334,7 @@ int main(int argc, char *argv[]) {
 
   // Check how many cities there are and read in their coordinates
   n_cities = CountLines(infile);
-  coords = malloc(n_cities * sizeof(coord));
+  coords = (coord *)malloc(n_cities * sizeof(coord));
   ReadCoords(infile, n_cities, coords);
   #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks)
   {
@@ -344,8 +344,8 @@ int main(int argc, char *argv[]) {
     if ( id == 0){
       ntasks=omp_get_num_threads();
       printf("Numero de thread %d\n", id);
-      v_my_best_path = malloc(sizeof(size_t) * ntasks);
-      v_best_fit = malloc(sizeof(size_t) * ntasks);
+      v_my_best_path =  (size_t *) malloc(sizeof(size_t) * ntasks);
+      v_best_fit = (float *) malloc(sizeof(float) * ntasks);
     }    
 
     unsigned short *pops[pop_size];
