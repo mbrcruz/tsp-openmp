@@ -1,0 +1,134 @@
+Numero de thread 0
+Numero de thread 1 - generation = 0
+Numero de thread 0 - generation = 1000
+Numero de thread 2 - generation = 2000
+Numero de thread 2 - generation = 3000
+Numero de thread 3 - generation = 4000
+Numero de thread 1 - generation = 5000
+Numero de thread 3 - generation = 6000
+Numero de thread 2 - generation = 7000
+Numero de thread 2 - generation = 8000
+Numero de thread 3 - generation = 9000
+Numero de thread 2 - generation = 10000
+Numero de thread 3 - generation = 11000
+Numero de thread 0 - generation = 12000
+Numero de thread 3 - generation = 13000
+Numero de thread 1 - generation = 14000
+Numero de thread 0 - generation = 15000
+Numero de thread 1 - generation = 16000
+Numero de thread 0 - generation = 17000
+Numero de thread 1 - generation = 18000
+Numero de thread 1 - generation = 19000
+Numero de thread 1 - generation = 20000
+Numero de thread 0 - generation = 21000
+Numero de thread 2 - generation = 22000
+Numero de thread 3 - generation = 23000
+Numero de thread 0 - generation = 24000
+Numero de thread 3 - generation = 25000
+Numero de thread 0 - generation = 26000
+Numero de thread 1 - generation = 27000
+Numero de thread 3 - generation = 28000
+Numero de thread 0 - generation = 29000
+Numero de thread 0 - generation = 30000
+Numero de thread 2 - generation = 31000
+Numero de thread 2 - generation = 32000
+Numero de thread 0 - generation = 33000
+Numero de thread 0 - generation = 34000
+Numero de thread 3 - generation = 35000
+Numero de thread 1 - generation = 36000
+Numero de thread 1 - generation = 37000
+Numero de thread 0 - generation = 38000
+Numero de thread 1 - generation = 39000
+Numero de thread 2 - generation = 40000
+Numero de thread 3 - generation = 41000
+Numero de thread 3 - generation = 42000
+Numero de thread 1 - generation = 43000
+Numero de thread 3 - generation = 44000
+Numero de thread 0 - generation = 45000
+Numero de thread 3 - generation = 46000
+Numero de thread 3 - generation = 47000
+Numero de thread 2 - generation = 48000
+Numero de thread 1 - generation = 49000
+Numero de thread 2 - generation = 50000
+Numero de thread 3 - generation = 51000
+Numero de thread 3 - generation = 52000
+Numero de thread 0 - generation = 53000
+Numero de thread 3 - generation = 54000
+Numero de thread 3 - generation = 55000
+Numero de thread 2 - generation = 56000
+Numero de thread 1 - generation = 57000
+Numero de thread 2 - generation = 58000
+Numero de thread 3 - generation = 59000
+Numero de thread 0 - generation = 60000
+Numero de thread 1 - generation = 61000
+Numero de thread 0 - generation = 62000
+Numero de thread 0 - generation = 63000
+Numero de thread 2 - generation = 64000
+Numero de thread 0 - generation = 65000
+Numero de thread 2 - generation = 66000
+Numero de thread 2 - generation = 67000
+Numero de thread 2 - generation = 68000
+Numero de thread 1 - generation = 69000
+Numero de thread 3 - generation = 70000
+Numero de thread 0 - generation = 71000
+Numero de thread 0 - generation = 72000
+Numero de thread 3 - generation = 73000
+Numero de thread 2 - generation = 74000
+Numero de thread 2 - generation = 75000
+Numero de thread 1 - generation = 76000
+Numero de thread 3 - generation = 77000
+Numero de thread 1 - generation = 78000
+Numero de thread 1 - generation = 79000
+Numero de thread 1 - generation = 80000
+Numero de thread 2 - generation = 81000
+Numero de thread 2 - generation = 82000
+Numero de thread 2 - generation = 83000
+Numero de thread 3 - generation = 84000
+Numero de thread 1 - generation = 85000
+Numero de thread 2 - generation = 86000
+Numero de thread 2 - generation = 87000
+Numero de thread 2 - generation = 88000
+Numero de thread 3 - generation = 89000
+Numero de thread 1 - generation = 90000
+Numero de thread 1 - generation = 91000
+Numero de thread 0 - generation = 92000
+Numero de thread 0 - generation = 93000
+Numero de thread 0 - generation = 94000
+Numero de thread 1 - generation = 95000
+Numero de thread 3 - generation = 96000
+Numero de thread 3 - generation = 97000
+Numero de thread 2 - generation = 98000
+Numero de thread 0 - generation = 99000
+Numero de thread 3 - generation = 100000
+Numero de thread 0 - generation = 101000
+Numero de thread 0 - generation = 102000
+Numero de thread 2 - generation = 103000
+Numero de thread 1 - generation = 104000
+Numero de thread 0 - generation = 105000
+Numero de thread 2 - generation = 106000
+Numero de thread 2 - generation = 107000
+Numero de thread 3 - generation = 108000
+Numero de thread 3 - generation = 109000
+Numero de thread 3 - generation = 110000
+Numero de thread 2 - generation = 111000
+Numero de thread 3 - generation = 112000
+Numero de thread 0 - generation = 113000
+Numero de thread 1 - generation = 114000
+Numero de thread 0 - generation = 115000
+Numero de thread 1 - generation = 116000
+Numero de thread 2 - generation = 117000
+Numero de thread 3 - generation = 118000
+Numero de thread 2 - generation = 119000
+id=0 - bestfit=1049.588379 
+id=3 - bestfit=1058.923828 
+id=1 - bestfit=1047.052002 
+id=2 - bestfit=1051.117676 
+tasks=4
+bestid=1
+best id=1 - the bestfit=1047.052002 
+Process 1 has a final best fitness of 1047.052002.
+Fitness of the best route found is 1047.052002.
+The best route found is 
+real	32m7.720s
+user	41m19.916s
+sys	70m0.348s

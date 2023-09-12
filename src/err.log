@@ -1,0 +1,316 @@
+icc -o tsp-openmp.o -c tsp-openmp.c -fopenmp -O3
+tsp-openmp.c(23): error: type name is not allowed
+    for (size_t i = 1; i < n_cities; ++i)
+         ^
+
+tsp-openmp.c(23): error: expected a ";"
+    for (size_t i = 1; i < n_cities; ++i)
+                ^
+
+tsp-openmp.c(23): error: identifier "i" is undefined
+    for (size_t i = 1; i < n_cities; ++i)
+                       ^
+
+tsp-openmp.c(37): error: type name is not allowed
+    for (size_t i = 0; i < n; ++i) {
+         ^
+
+tsp-openmp.c(37): error: expected a ";"
+    for (size_t i = 0; i < n; ++i) {
+                ^
+
+tsp-openmp.c(37): error: identifier "i" is undefined
+    for (size_t i = 0; i < n; ++i) {
+                       ^
+
+tsp-openmp.c(45): error: type name is not allowed
+    for (size_t i = 0; i < n_cities; ++i)
+         ^
+
+tsp-openmp.c(45): error: expected a ";"
+    for (size_t i = 0; i < n_cities; ++i)
+                ^
+
+tsp-openmp.c(45): error: identifier "i" is undefined
+    for (size_t i = 0; i < n_cities; ++i)
+                       ^
+
+tsp-openmp.c(63): error: type name is not allowed
+    for (size_t i = 0; i < i_max; ++i) {
+         ^
+
+tsp-openmp.c(63): error: expected a ";"
+    for (size_t i = 0; i < i_max; ++i) {
+                ^
+
+tsp-openmp.c(63): error: identifier "i" is undefined
+    for (size_t i = 0; i < i_max; ++i) {
+                       ^
+
+tsp-openmp.c(74): error: type name is not allowed
+    for (size_t i = 1; i < n_cities; ++i) {
+         ^
+
+tsp-openmp.c(74): error: expected a ";"
+    for (size_t i = 1; i < n_cities; ++i) {
+                ^
+
+tsp-openmp.c(74): error: identifier "i" is undefined
+    for (size_t i = 1; i < n_cities; ++i) {
+                       ^
+
+tsp-openmp.c(100): error: type name is not allowed
+        for (size_t j = 0; j < n_cities; ++j) {
+             ^
+
+tsp-openmp.c(100): error: expected a ";"
+        for (size_t j = 0; j < n_cities; ++j) {
+                    ^
+
+tsp-openmp.c(100): error: identifier "j" is undefined
+        for (size_t j = 0; j < n_cities; ++j) {
+                           ^
+
+tsp-openmp.c(103): error: type name is not allowed
+        for (size_t j = 0; j < i; ++j) {
+             ^
+
+tsp-openmp.c(103): error: expected a ";"
+        for (size_t j = 0; j < i; ++j) {
+                    ^
+
+tsp-openmp.c(149): error: type name is not allowed
+    for (size_t i = 0; i < pop_size; ++i) {
+         ^
+
+tsp-openmp.c(149): error: expected a ";"
+    for (size_t i = 0; i < pop_size; ++i) {
+                ^
+
+tsp-openmp.c(149): error: identifier "i" is undefined
+    for (size_t i = 0; i < pop_size; ++i) {
+                       ^
+
+tsp-openmp.c(158): error: type name is not allowed
+    for (size_t i = 0; i < n_cities; ++i) {
+         ^
+
+tsp-openmp.c(158): error: expected a ";"
+    for (size_t i = 0; i < n_cities; ++i) {
+                ^
+
+tsp-openmp.c(171): error: type name is not allowed
+    for (size_t i = 0; i < pop_size; ++i) {
+         ^
+
+tsp-openmp.c(171): error: expected a ";"
+    for (size_t i = 0; i < pop_size; ++i) {
+                ^
+
+tsp-openmp.c(171): error: identifier "i" is undefined
+    for (size_t i = 0; i < pop_size; ++i) {
+                       ^
+
+tsp-openmp.c(191): error: type name is not allowed
+      for (size_t i = 0; i < n; i++)
+           ^
+
+tsp-openmp.c(191): error: expected a ";"
+      for (size_t i = 0; i < n; i++)
+                  ^
+
+tsp-openmp.c(191): error: identifier "i" is undefined
+      for (size_t i = 0; i < n; i++)
+                         ^
+
+tsp-openmp.c(196): error: type name is not allowed
+      for (size_t i = 0; i < n; i++)
+           ^
+
+tsp-openmp.c(196): error: expected a ";"
+      for (size_t i = 0; i < n; i++)
+                  ^
+
+tsp-openmp.c(208): error: type name is not allowed
+    for (size_t i = 0; i < pop_size; ++i) {
+         ^
+
+tsp-openmp.c(208): error: expected a ";"
+    for (size_t i = 0; i < pop_size; ++i) {
+                ^
+
+tsp-openmp.c(208): error: identifier "i" is undefined
+    for (size_t i = 0; i < pop_size; ++i) {
+                       ^
+
+tsp-openmp.c(215): error: type name is not allowed
+    for (size_t i = 0; i < pop_size; ++i) {
+         ^
+
+tsp-openmp.c(215): error: expected a ";"
+    for (size_t i = 0; i < pop_size; ++i) {
+                ^
+
+tsp-openmp.c(219): error: type name is not allowed
+        for (size_t k = 0; k < n_cities; ++k) {
+             ^
+
+tsp-openmp.c(219): error: expected a ";"
+        for (size_t k = 0; k < n_cities; ++k) {
+                    ^
+
+tsp-openmp.c(219): error: identifier "k" is undefined
+        for (size_t k = 0; k < n_cities; ++k) {
+                           ^
+
+tsp-openmp.c(223): error: type name is not allowed
+        for (size_t k = 0; k < n_cities; ++k) {
+             ^
+
+tsp-openmp.c(223): error: expected a ";"
+        for (size_t k = 0; k < n_cities; ++k) {
+                    ^
+
+tsp-openmp.c(223): error: identifier "k" is undefined
+        for (size_t k = 0; k < n_cities; ++k) {
+                           ^
+
+tsp-openmp.c(238): error: type name is not allowed
+    for (size_t i = 0; i < pop_size; ++i) {
+         ^
+
+tsp-openmp.c(238): error: expected a ";"
+    for (size_t i = 0; i < pop_size; ++i) {
+                ^
+
+tsp-openmp.c(238): error: identifier "i" is undefined
+    for (size_t i = 0; i < pop_size; ++i) {
+                       ^
+
+tsp-openmp.c(244): error: type name is not allowed
+    for (size_t i = 0; i < migration_size; ++i)
+         ^
+
+tsp-openmp.c(244): error: expected a ";"
+    for (size_t i = 0; i < migration_size; ++i)
+                ^
+
+tsp-openmp.c(254): error: type name is not allowed
+    for (size_t i = 0; i < n_weights; ++i) {
+         ^
+
+tsp-openmp.c(254): error: expected a ";"
+    for (size_t i = 0; i < n_weights; ++i) {
+                ^
+
+tsp-openmp.c(254): error: identifier "i" is undefined
+    for (size_t i = 0; i < n_weights; ++i) {
+                       ^
+
+tsp-openmp.c(259): error: type name is not allowed
+    for (size_t i = 0; i < n_weights; ++i) {
+         ^
+
+tsp-openmp.c(259): error: expected a ";"
+    for (size_t i = 0; i < n_weights; ++i) {
+                ^
+
+tsp-openmp.c(272): error: type name is not allowed
+    for (size_t i = 0; i < pop_size; ++i) {
+         ^
+
+tsp-openmp.c(272): error: expected a ";"
+    for (size_t i = 0; i < pop_size; ++i) {
+                ^
+
+tsp-openmp.c(272): error: identifier "i" is undefined
+    for (size_t i = 0; i < pop_size; ++i) {
+                       ^
+
+tsp-openmp.c(276): error: type name is not allowed
+    for (size_t i = 0; i < migration_size; ++i) {
+         ^
+
+tsp-openmp.c(276): error: expected a ";"
+    for (size_t i = 0; i < migration_size; ++i) {
+                ^
+
+tsp-openmp.c(278): error: type name is not allowed
+      for (size_t k = 0; k < n_cities; ++k) {
+           ^
+
+tsp-openmp.c(278): error: expected a ";"
+      for (size_t k = 0; k < n_cities; ++k) {
+                  ^
+
+tsp-openmp.c(278): error: identifier "k" is undefined
+      for (size_t k = 0; k < n_cities; ++k) {
+                         ^
+
+tsp-openmp.c(352): error: type name is not allowed
+      for (size_t i = 0; i < pop_size; ++i)
+           ^
+
+tsp-openmp.c(352): error: expected a ";"
+      for (size_t i = 0; i < pop_size; ++i)
+                  ^
+
+tsp-openmp.c(352): error: identifier "i" is undefined
+      for (size_t i = 0; i < pop_size; ++i)
+                         ^
+
+tsp-openmp.c(355): error: type name is not allowed
+      for (size_t i = 0; i < pop_size; ++i)
+           ^
+
+tsp-openmp.c(355): error: expected a ";"
+      for (size_t i = 0; i < pop_size; ++i)
+                  ^
+
+tsp-openmp.c(359): error: type name is not allowed
+      for (size_t j = 0; j < pop_size; ++j)
+           ^
+
+tsp-openmp.c(359): error: expected a ";"
+      for (size_t j = 0; j < pop_size; ++j)
+                  ^
+
+tsp-openmp.c(359): error: identifier "j" is undefined
+      for (size_t j = 0; j < pop_size; ++j)
+                         ^
+
+tsp-openmp.c(366): error: type name is not allowed
+      for (size_t i = 0; i < n_generations; ++i) {
+           ^
+
+tsp-openmp.c(366): error: expected a ";"
+      for (size_t i = 0; i < n_generations; ++i) {
+                  ^
+
+tsp-openmp.c(376): error: type name is not allowed
+          for (size_t i = 0; i < migration_size; ++i)
+               ^
+
+tsp-openmp.c(376): error: expected a ";"
+          for (size_t i = 0; i < migration_size; ++i)
+                      ^
+
+tsp-openmp.c(414): error: type name is not allowed
+        for (size_t j = 0; j < pop_size; ++j) {
+             ^
+
+tsp-openmp.c(414): error: expected a ";"
+        for (size_t j = 0; j < pop_size; ++j) {
+                    ^
+
+tsp-openmp.c(451): error: expected an expression
+      for(int i=0;i<ntasks;i++){
+          ^
+
+tsp-openmp.c(451): error: identifier "i" is undefined
+      for(int i=0;i<ntasks;i++){
+                  ^
+
+compilation aborted for tsp-openmp.c (code 2)
+Makefile:13: recipe for target 'tsp-openmp.o' failed
+make: *** [tsp-openmp.o] Error 2

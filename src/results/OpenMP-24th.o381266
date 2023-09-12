@@ -1,0 +1,154 @@
+OMP: Warning #63: KMP_AFFINITY: proclist specified, setting affinity type to "explicit".
+Numero de thread 0
+Numero de thread 0 - generation = 0
+Numero de thread 20 - generation = 100000
+Numero de thread 23 - generation = 115000
+Numero de thread 3 - generation = 15000
+Numero de thread 2 - generation = 10000
+Numero de thread 1 - generation = 5000
+Numero de thread 4 - generation = 20000
+Numero de thread 16 - generation = 80000
+Numero de thread 18 - generation = 90000
+Numero de thread 15 - generation = 75000
+Numero de thread 21 - generation = 105000
+Numero de thread 9 - generation = 45000
+Numero de thread 17 - generation = 85000
+Numero de thread 13 - generation = 65000
+Numero de thread 6 - generation = 30000
+Numero de thread 14 - generation = 70000
+Numero de thread 8 - generation = 40000
+Numero de thread 5 - generation = 25000
+Numero de thread 12 - generation = 60000
+Numero de thread 22 - generation = 110000
+Numero de thread 19 - generation = 95000
+Numero de thread 7 - generation = 35000
+Numero de thread 10 - generation = 50000
+Numero de thread 11 - generation = 55000
+Numero de thread 17 - generation = 86000
+Numero de thread 21 - generation = 106000
+Numero de thread 9 - generation = 46000
+Numero de thread 23 - generation = 116000
+Numero de thread 15 - generation = 76000
+Numero de thread 7 - generation = 36000
+Numero de thread 1 - generation = 6000
+Numero de thread 13 - generation = 66000
+Numero de thread 6 - generation = 31000
+Numero de thread 19 - generation = 96000
+Numero de thread 2 - generation = 11000
+Numero de thread 5 - generation = 26000
+Numero de thread 14 - generation = 71000
+Numero de thread 10 - generation = 51000
+Numero de thread 3 - generation = 16000
+Numero de thread 11 - generation = 56000
+Numero de thread 20 - generation = 101000
+Numero de thread 16 - generation = 81000
+Numero de thread 0 - generation = 1000
+Numero de thread 8 - generation = 41000
+Numero de thread 4 - generation = 21000
+Numero de thread 12 - generation = 61000
+Numero de thread 18 - generation = 91000
+Numero de thread 22 - generation = 111000
+Numero de thread 17 - generation = 87000
+Numero de thread 21 - generation = 107000
+Numero de thread 9 - generation = 47000
+Numero de thread 7 - generation = 37000
+Numero de thread 23 - generation = 117000
+Numero de thread 15 - generation = 77000
+Numero de thread 1 - generation = 7000
+Numero de thread 13 - generation = 67000
+Numero de thread 6 - generation = 32000
+Numero de thread 2 - generation = 12000
+Numero de thread 19 - generation = 97000
+Numero de thread 14 - generation = 72000
+Numero de thread 5 - generation = 27000
+Numero de thread 10 - generation = 52000
+Numero de thread 11 - generation = 57000
+Numero de thread 3 - generation = 17000
+Numero de thread 20 - generation = 102000
+Numero de thread 16 - generation = 82000
+Numero de thread 0 - generation = 2000
+Numero de thread 8 - generation = 42000
+Numero de thread 4 - generation = 22000
+Numero de thread 18 - generation = 92000
+Numero de thread 12 - generation = 62000
+Numero de thread 22 - generation = 112000
+Numero de thread 17 - generation = 88000
+Numero de thread 21 - generation = 108000
+Numero de thread 9 - generation = 48000
+Numero de thread 7 - generation = 38000
+Numero de thread 13 - generation = 68000
+Numero de thread 23 - generation = 118000
+Numero de thread 1 - generation = 8000
+Numero de thread 15 - generation = 78000
+Numero de thread 6 - generation = 33000
+Numero de thread 2 - generation = 13000
+Numero de thread 19 - generation = 98000
+Numero de thread 14 - generation = 73000
+Numero de thread 10 - generation = 53000
+Numero de thread 5 - generation = 28000
+Numero de thread 11 - generation = 58000
+Numero de thread 3 - generation = 18000
+Numero de thread 20 - generation = 103000
+Numero de thread 16 - generation = 83000
+Numero de thread 0 - generation = 3000
+Numero de thread 8 - generation = 43000
+Numero de thread 18 - generation = 93000
+Numero de thread 22 - generation = 113000
+Numero de thread 4 - generation = 23000
+Numero de thread 12 - generation = 63000
+Numero de thread 17 - generation = 89000
+Numero de thread 21 - generation = 109000
+Numero de thread 9 - generation = 49000
+Numero de thread 7 - generation = 39000
+Numero de thread 13 - generation = 69000
+Numero de thread 23 - generation = 119000
+Numero de thread 1 - generation = 9000
+Numero de thread 15 - generation = 79000
+Numero de thread 6 - generation = 34000
+Numero de thread 2 - generation = 14000
+Numero de thread 19 - generation = 99000
+Numero de thread 14 - generation = 74000
+Numero de thread 10 - generation = 54000
+Numero de thread 5 - generation = 29000
+Numero de thread 11 - generation = 59000
+Numero de thread 3 - generation = 19000
+Numero de thread 20 - generation = 104000
+Numero de thread 16 - generation = 84000
+Numero de thread 0 - generation = 4000
+Numero de thread 22 - generation = 114000
+Numero de thread 18 - generation = 94000
+Numero de thread 8 - generation = 44000
+Numero de thread 4 - generation = 24000
+Numero de thread 12 - generation = 64000
+id=18 - bestfit=0.734439 
+id=16 - bestfit=0.739315 
+id=19 - bestfit=0.710519 
+id=17 - bestfit=0.723422 
+id=22 - bestfit=0.753007 
+id=20 - bestfit=0.739315 
+id=23 - bestfit=0.713525 
+id=21 - bestfit=0.738211 
+id=8 - bestfit=0.713525 
+id=10 - bestfit=0.710519 
+id=9 - bestfit=0.770485 
+id=0 - bestfit=0.710519 
+id=3 - bestfit=0.723422 
+id=2 - bestfit=0.723422 
+id=1 - bestfit=0.723864 
+id=11 - bestfit=0.710519 
+id=6 - bestfit=0.748281 
+id=7 - bestfit=0.711027 
+id=4 - bestfit=0.748032 
+id=5 - bestfit=0.739315 
+id=15 - bestfit=0.785566 
+id=13 - bestfit=0.739315 
+id=14 - bestfit=0.748281 
+id=12 - bestfit=0.780038 
+tasks=24
+best id=0 - the bestfit=0.710519 
+Process 0 has a final best fitness of 0.710519.
+Fitness of the best route found is 0.710519.
+The best route found is 
+real	55m56.156s
+user	45m5.652s
+sys	173m8.472s
