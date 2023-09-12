@@ -300,6 +300,9 @@ void check_input(float mutation_prob, size_t pop_size, float migration_prob, siz
 
 int main(int argc, char *argv[]) {
   int id=0,ntasks=1;  
+  clock_t start_time, end_time;
+  double cpu_time_used;
+  start_time = clock();
   
 
   //shared points
@@ -336,6 +339,12 @@ int main(int argc, char *argv[]) {
   n_cities = CountLines(infile);
   coords = (coord *)malloc(n_cities * sizeof(coord));
   ReadCoords(infile, n_cities, coords);
+  end_time = clock();
+  cpu_time_used = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
+  printf("Sequencial time %f segundos\n", cpu_time_used);
+
+
+  start_time = clock();
   #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks)
   {
     // Initialize a population from random paths
@@ -455,9 +464,10 @@ int main(int argc, char *argv[]) {
       printf("bestid=%d\n", i);
     }
   }
+ 
+  
   my_best_path[0] = v_my_best_path[best_id];
   printf("best id=%d - the bestfit=%f \n", best_id , v_best_fit[best_id]);
-
   printf("Process %d has a final best fitness of %f.\n", best_id, v_best_fit[best_id]);   
   printf("Fitness of the best route found is %f.\n", v_best_fit[best_id]);
   printf("The best route found is ");
@@ -467,7 +477,8 @@ int main(int argc, char *argv[]) {
   //     printf(",");
   // } 
   // printf(".\n");
-
-  
+  end_time = clock();
+  cpu_time_used = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
+  printf("Time for main thread time %f segundos\n", cpu_time_used);  
   return 0;
 }
