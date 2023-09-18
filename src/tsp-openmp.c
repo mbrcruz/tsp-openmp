@@ -340,15 +340,11 @@ int main(int argc, char *argv[]) {
   coords = (coord *)malloc(n_cities * sizeof(coord));
   ReadCoords(infile, n_cities, coords);
   end_time = clock();
-  cpu_time_used = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
-  printf("Sequencial time %f segundos\n", cpu_time_used);
-
-
-  start_time = clock();
-  #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks)
+  cpu_time_used = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;  
+  #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks) private(start_time,end_time,cpu_time_used)
   {
     // Initialize a population from random paths
-    
+    start_time = clock();
     id = omp_get_thread_num();
     if ( id == 0){
       ntasks=omp_get_num_threads();
@@ -370,10 +366,12 @@ int main(int argc, char *argv[]) {
 
     int has_immigrants = 0;
     unsigned short **emigrants; 
-    
+    end_time = clock();
+    cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;     
     #pragma omp for
     for (size_t i = 0; i < n_generations; ++i) 
     {
+      start_time = clock();
       id = omp_get_thread_num();
       if ( i % 1000 == 0)
         printf("Numero de thread %d - generation = %d\n", id , i);
@@ -444,8 +442,11 @@ int main(int argc, char *argv[]) {
       // if ((i % 100) == 0) {
       //   printf("Process %d generation %zu\t", id, i + 1);
       //   FitnessStatus(pops, coords, pop_size, n_cities);
-      // }      
+      // }  
+      end_time = clock();
+      cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;     
     }
+    start_time = clock();
     id = omp_get_thread_num();    
     size_t my_best_path[1];
     my_best_path[0] = 0;
@@ -453,7 +454,11 @@ int main(int argc, char *argv[]) {
     v_best_fit[id]= best_fit;
     printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
     v_my_best_path[id]= my_best_path[0];   
+    end_time = clock();
+    cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
+    printf("Total time for %d is %f seconds\n", id,cpu_time_used);    
   } 
+  start_time = clock();
   size_t my_best_path[1];
   my_best_path[0] = 0;
   int best_id=0;
@@ -479,6 +484,6 @@ int main(int argc, char *argv[]) {
   // printf(".\n");
   end_time = clock();
   cpu_time_used = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
-  printf("Time for main thread time %f segundos\n", cpu_time_used);  
+  printf("Total time for main thread is %f seconds\n", cpu_time_used);   
   return 0;
 }
