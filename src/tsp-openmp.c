@@ -341,7 +341,7 @@ int main(int argc, char *argv[]) {
   ReadCoords(infile, n_cities, coords);
   end_time = clock();
   cpu_time_used = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;  
-  #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks) private(start_time,end_time,cpu_time_used)
+  #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks)
   {
     // Initialize a population from random paths
     start_time = clock();
