@@ -483,7 +483,7 @@ int main(int argc, char *argv[]) {
   // } 
   // printf(".\n");
   end_time = clock();
-  cpu_time_used = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
+  cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
   printf("Total time for main thread is %f seconds\n", cpu_time_used);   
   return 0;
 }
