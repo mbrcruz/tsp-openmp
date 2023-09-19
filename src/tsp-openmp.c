@@ -300,9 +300,10 @@ void check_input(float mutation_prob, size_t pop_size, float migration_prob, siz
 
 int main(int argc, char *argv[]) {
   int id=0,ntasks=1;  
-  clock_t start_time, end_time;
-  double cpu_time_used;
+  clock_t start_time, start_time_total,end_time,end_time_total;
+  double cpu_time_used,cpu_time_used_total;
   start_time = clock();
+  start_time_total = start_time;
   
 
   //shared points
@@ -483,7 +484,10 @@ int main(int argc, char *argv[]) {
   // } 
   // printf(".\n");
   end_time = clock();
+  end_time_total = end_time;
   cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
-  printf("Total time for main thread is %f seconds\n", cpu_time_used);   
+  printf("Total time for main thread is %f seconds\n", cpu_time_used);  
+  cpu_time_used_total = (((double)(end_time_total - start_time_total)) / CLOCKS_PER_SEC);
+  printf("Total time for the program is %f seconds\n", cpu_time_used_total);   
   return 0;
 }
