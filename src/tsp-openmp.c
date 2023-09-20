@@ -302,8 +302,9 @@ int main(int argc, char *argv[]) {
   int id=0,ntasks=1;  
   clock_t start_time, start_time_total,end_time,end_time_total;
   double cpu_time_used,cpu_time_used_total;
+  start_time_total = clock();
   start_time = clock();
-  start_time_total = start_time;
+  
   
 
   //shared points
@@ -484,7 +485,7 @@ int main(int argc, char *argv[]) {
   // } 
   // printf(".\n");
   end_time = clock();
-  end_time_total = end_time;
+  end_time_total = clock();
   cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
   printf("Total time for main thread is %f seconds\n", cpu_time_used);  
   cpu_time_used_total = (((double)(end_time_total - start_time_total)) / CLOCKS_PER_SEC);
