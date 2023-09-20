@@ -372,7 +372,7 @@ int main(int argc, char *argv[]) {
     for (size_t i = 0; i < n_generations; ++i) 
     {
       
-      // start_time = omp_get_wtime();      
+      //start_time = omp_get_wtime();      
       // Check pops want to emigrate
       if (rand_p() < migration_prob) {
         // Emigrants and immigrants need to be allocated contiguously for MPI
@@ -437,8 +437,8 @@ int main(int argc, char *argv[]) {
         printf("Process %d generation %zu\n", id, i + 1);
         FitnessStatus(pops, coords, pop_size, n_cities);
       }  
-      end_time = omp_get_wtime();
-      cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
+      // end_time = omp_get_wtime();
+      // cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
     }
     start_time = omp_get_wtime();       
     size_t my_best_path[1];
@@ -447,9 +447,9 @@ int main(int argc, char *argv[]) {
     v_best_fit[id]= best_fit;
     printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
     v_my_best_path[id]= my_best_path[0];      
-    // end_time = omp_get_wtime();
-    // cpu_time_used = (((double)(end_time - start_time)) ) + cpu_time_used;  
-    // printf("Total time for %d is %f seconds\n", id, cpu_time_used);      
+    end_time = omp_get_wtime();
+    cpu_time_used = (((double)(end_time - start_time)) ) + cpu_time_used;  
+    printf("Total time for %d is %f seconds\n", id, cpu_time_used);      
   }   
   size_t my_best_path[1];
   my_best_path[0] = 0;
