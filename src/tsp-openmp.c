@@ -367,12 +367,13 @@ int main(int argc, char *argv[]) {
     int has_immigrants = 0;
     unsigned short **emigrants; 
     end_time = omp_get_wtime();
-    cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
+    cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used; 
+        
     #pragma omp for
     for (size_t i = 0; i < n_generations; ++i) 
     {
       
-      //start_time = omp_get_wtime();      
+      start_time = omp_get_wtime();      
       // Check pops want to emigrate
       if (rand_p() < migration_prob) {
         // Emigrants and immigrants need to be allocated contiguously for MPI
@@ -437,8 +438,8 @@ int main(int argc, char *argv[]) {
         printf("Process %d generation %zu\n", id, i + 1);
         FitnessStatus(pops, coords, pop_size, n_cities);
       }  
-      // end_time = omp_get_wtime();
-      // cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
+      end_time = omp_get_wtime();
+      cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
     }
     start_time = omp_get_wtime();       
     size_t my_best_path[1];
