@@ -350,7 +350,7 @@ int main(int argc, char *argv[]) {
     id = omp_get_thread_num();
     if ( id == 0){
       ntasks=omp_get_num_threads();
-      printf("Numero de thread %d\n", id);
+      printf("Numero de thread %d\n", ntasks);
       v_my_best_path =  (size_t *) malloc(sizeof(size_t) * ntasks);
       v_best_fit = (float *) malloc(sizeof(float) * ntasks);
     }    
