@@ -455,10 +455,10 @@ int main(int argc, char *argv[]) {
     float best_fit = BestFit(pops, coords, pop_size, n_cities, my_best_path);    
     v_best_fit[id]= best_fit;
     printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
-    v_my_best_path[id]= my_best_path[0];   
+    v_my_best_path[id]= my_best_path[0]; 
+    printf("Total time for %d is %f seconds\n", id, cpu_time_used);  
     //end_time = clock();
-    //cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
-    printf("Total time for %d is %f seconds\n", id, cpu_time_used);    
+    //cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;       
   } 
   start_time = omp_get_wtime();
   size_t my_best_path[1];
