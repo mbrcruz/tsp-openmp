@@ -302,8 +302,8 @@ int main(int argc, char *argv[]) {
   int id=0,ntasks=1;  
   clock_t start_time, start_time_total,end_time,end_time_total;
   double cpu_time_used,cpu_time_used_total;
-  start_time_total = clock();
-  start_time = clock();
+  start_time_total =omp_get_wtime();
+  start_time = omp_get_wtime();
   
   
 
@@ -341,8 +341,8 @@ int main(int argc, char *argv[]) {
   n_cities = CountLines(infile);
   coords = (coord *)malloc(n_cities * sizeof(coord));
   ReadCoords(infile, n_cities, coords);
-  end_time = clock();
-  cpu_time_used = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;  
+  end_time = omp_get_wtime();
+  cpu_time_used = (double)(end_time - start_time);  
   #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks)
   {
     // Initialize a population from random paths
@@ -373,7 +373,7 @@ int main(int argc, char *argv[]) {
     #pragma omp for
     for (size_t i = 0; i < n_generations; ++i) 
     {
-      start_time = clock();
+      start_time = omp_get_wtime();
       id = omp_get_thread_num();
       if ( i % 1000 == 0)
         printf("Numero de thread %d - generation = %d\n", id , i);
@@ -445,8 +445,8 @@ int main(int argc, char *argv[]) {
       //   printf("Process %d generation %zu\t", id, i + 1);
       //   FitnessStatus(pops, coords, pop_size, n_cities);
       // }  
-      end_time = clock();
-      cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;     
+      end_time = omp_get_wtime();
+      cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
     }
     //start_time = clock();
     id = omp_get_thread_num();    
@@ -460,7 +460,7 @@ int main(int argc, char *argv[]) {
     //cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
     //("Total time for %d is %f seconds\n", id,cpu_time_used);    
   } 
-  start_time = clock();
+  start_time = omp_get_wtime();
   size_t my_best_path[1];
   my_best_path[0] = 0;
   int best_id=0;
@@ -484,8 +484,8 @@ int main(int argc, char *argv[]) {
   //     printf(",");
   // } 
   // printf(".\n"); 
-  end_time_total = clock();
-  cpu_time_used_total = (((double)(end_time_total - start_time_total)) / CLOCKS_PER_SEC);
+  end_time_total = omp_get_wtime();
+  cpu_time_used_total = ((double)(end_time_total - start_time_total));
   printf("Total time for the program is %f seconds\n", cpu_time_used_total);   
   return 0;
 }
