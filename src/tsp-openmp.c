@@ -345,6 +345,7 @@ int main(int argc, char *argv[]) {
     // Initialize a population from random paths
     double start_time,end_time,cpu_time_used;
     start_time = omp_get_wtime();   
+    id = omp_get_thread_num();
     if ( id == 0){
       ntasks=omp_get_num_threads();
       printf("Numero de thread %d\n", ntasks);
@@ -391,10 +392,13 @@ int main(int argc, char *argv[]) {
         } else if (!prev && id == ntasks - 1) {
           target_id = 0;
         }
-        has_immigrants = 1;        
-      }    
-      
-      // MPI_Iprobe(MPI_ANY_SOURCE, 42, MPI_COMM_WORLD, &has_immigrants, &status);
+        has_immigrants = 1;
+        // MPI_Request req;
+        // MPI_Isend(&(emigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, target_id, 42, MPI_COMM_WORLD, &req);
+        
+      }
+
+     
       if (has_immigrants) {
         //unsigned short *data = (unsigned short *)malloc(migration_size*n_cities*sizeof(unsigned short));
         //unsigned short **immigrants= emigrants;
