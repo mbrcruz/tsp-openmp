@@ -375,9 +375,6 @@ int main(int argc, char *argv[]) {
     {
       start_time = omp_get_wtime();
       id = omp_get_thread_num();
-      if ( i % 1000 == 0)
-        printf("Numero de thread %d - generation = %d\n", id , i);
-      
       // Check pops want to emigrate
       if (rand_p() < migration_prob) {
         // Emigrants and immigrants need to be allocated contiguously for MPI
@@ -441,10 +438,10 @@ int main(int argc, char *argv[]) {
       selection(pops, new_pops, pop_size, coords, n_cities);
 
       //Uncomment for periodic updates
-      // if ((i % 100) == 0) {
-      //   printf("Process %d generation %zu\t", id, i + 1);
-      //   FitnessStatus(pops, coords, pop_size, n_cities);
-      // }  
+      if ((i % 100) == 0) {
+        printf("Process %d generation %zu\n", id, i + 1);
+        FitnessStatus(pops, coords, pop_size, n_cities);
+      }  
       end_time = omp_get_wtime();
       cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
     }
