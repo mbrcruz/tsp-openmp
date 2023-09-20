@@ -300,10 +300,9 @@ void check_input(float mutation_prob, size_t pop_size, float migration_prob, siz
 
 int main(int argc, char *argv[]) {
   int id=0,ntasks=1;  
-  double start_time, start_time_total,end_time,end_time_total;
-  double cpu_time_used=0,cpu_time_used_total;
-  start_time_total =omp_get_wtime();
-  start_time = omp_get_wtime();
+  
+  double start_time_total,end_time_total,cpu_time_used_total;
+  start_time_total =omp_get_wtime(); 
   
   
 
@@ -340,12 +339,11 @@ int main(int argc, char *argv[]) {
   // Check how many cities there are and read in their coordinates
   n_cities = CountLines(infile);
   coords = (coord *)malloc(n_cities * sizeof(coord));
-  ReadCoords(infile, n_cities, coords);
-  end_time = omp_get_wtime();
-  cpu_time_used = (double)(end_time - start_time);  
-  #pragma omp parallel default(none) firstprivate(start_time,id,pop_size,n_cities,end_time,n_generations,migration_size,coords,mutation_prob,cpu_time_used,migration_prob) shared(v_my_best_path,v_best_fit,ntasks) 
+  ReadCoords(infile, n_cities, coords);  
+  #pragma omp parallel default(none) firstprivate(id,pop_size,n_cities,n_generations,migration_size,coords,mutation_prob,migration_prob) shared(v_my_best_path,v_best_fit,ntasks) 
   {
     // Initialize a population from random paths
+    double start_time,end_time,cpu_time_used;
     start_time = omp_get_wtime();
     id = omp_get_thread_num();
     if ( id == 0){
@@ -373,6 +371,7 @@ int main(int argc, char *argv[]) {
     #pragma omp for
     for (size_t i = 0; i < n_generations; ++i) 
     {
+      
       start_time = omp_get_wtime();
       id = omp_get_thread_num();
       // Check pops want to emigrate
@@ -455,8 +454,7 @@ int main(int argc, char *argv[]) {
     end_time = omp_get_wtime();
     cpu_time_used = (((double)(end_time - start_time)) ) + cpu_time_used;  
     printf("Total time for %d is %f seconds\n", id, cpu_time_used);      
-  } 
-  start_time = omp_get_wtime();
+  }   
   size_t my_best_path[1];
   my_best_path[0] = 0;
   int best_id=0;  
