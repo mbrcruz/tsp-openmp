@@ -346,7 +346,7 @@ int main(int argc, char *argv[]) {
   #pragma omp parallel shared(v_my_best_path,v_best_fit,ntasks)
   {
     // Initialize a population from random paths
-    start_time = clock();
+    //start_time = clock();
     id = omp_get_thread_num();
     if ( id == 0){
       ntasks=omp_get_num_threads();
@@ -368,8 +368,8 @@ int main(int argc, char *argv[]) {
 
     int has_immigrants = 0;
     unsigned short **emigrants; 
-    end_time = clock();
-    cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;     
+    //end_time = clock();
+    //cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;     
     #pragma omp for
     for (size_t i = 0; i < n_generations; ++i) 
     {
@@ -448,7 +448,7 @@ int main(int argc, char *argv[]) {
       end_time = clock();
       cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;     
     }
-    start_time = clock();
+    //start_time = clock();
     id = omp_get_thread_num();    
     size_t my_best_path[1];
     my_best_path[0] = 0;
@@ -456,9 +456,9 @@ int main(int argc, char *argv[]) {
     v_best_fit[id]= best_fit;
     printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
     v_my_best_path[id]= my_best_path[0];   
-    end_time = clock();
-    cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
-    printf("Total time for %d is %f seconds\n", id,cpu_time_used);    
+    //end_time = clock();
+    //cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
+    //("Total time for %d is %f seconds\n", id,cpu_time_used);    
   } 
   start_time = clock();
   size_t my_best_path[1];
