@@ -2,6 +2,7 @@
 CCFLAGS=-fopenmp -O3
 #CCFLAGS=-g
 LDFLAGS=-fopenmp  -O3
+CC=icpc
 
 all: tsp-openmp
 
