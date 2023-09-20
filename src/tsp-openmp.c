@@ -458,7 +458,7 @@ int main(int argc, char *argv[]) {
     v_my_best_path[id]= my_best_path[0];   
     //end_time = clock();
     //cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
-    //("Total time for %d is %f seconds\n", id,cpu_time_used);    
+    printf("Total time for %d is %f seconds\n", id,cpu_time_used);    
   } 
   start_time = omp_get_wtime();
   size_t my_best_path[1];
