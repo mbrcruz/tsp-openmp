@@ -483,11 +483,8 @@ int main(int argc, char *argv[]) {
   //   if (i < n_cities - 1)
   //     printf(",");
   // } 
-  // printf(".\n");
-  end_time = clock();
+  // printf(".\n"); 
   end_time_total = clock();
-  cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
-  printf("Total time for main thread is %f seconds\n", cpu_time_used);  
   cpu_time_used_total = (((double)(end_time_total - start_time_total)) / CLOCKS_PER_SEC);
   printf("Total time for the program is %f seconds\n", cpu_time_used_total);   
   return 0;
