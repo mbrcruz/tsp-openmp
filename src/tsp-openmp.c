@@ -344,7 +344,7 @@ int main(int argc, char *argv[]) {
   {
     // Initialize a population from random paths
     double start_time,end_time,cpu_time_used;
-    start_time = omp_get_wtime();   
+    //start_time = omp_get_wtime();   
     id = omp_get_thread_num();
     if ( id == 0){
       ntasks=omp_get_num_threads();
@@ -366,9 +366,9 @@ int main(int argc, char *argv[]) {
 
     int has_immigrants = 0;
     unsigned short **emigrants; 
-    end_time = omp_get_wtime();
-    cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used; 
-        
+    // end_time = omp_get_wtime();
+    // cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used; 
+
     #pragma omp for
     for (size_t i = 0; i < n_generations; ++i) 
     {
@@ -441,16 +441,16 @@ int main(int argc, char *argv[]) {
       end_time = omp_get_wtime();
       cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
     }
-    start_time = omp_get_wtime();       
+    //start_time = omp_get_wtime();       
     size_t my_best_path[1];
     my_best_path[0] = 0;
     float best_fit = BestFit(pops, coords, pop_size, n_cities, my_best_path);    
     v_best_fit[id]= best_fit;
     printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
     v_my_best_path[id]= my_best_path[0];      
-    end_time = omp_get_wtime();
-    cpu_time_used = (((double)(end_time - start_time)) ) + cpu_time_used;  
-    printf("Total time for %d is %f seconds\n", id, cpu_time_used);      
+    // end_time = omp_get_wtime();
+    // cpu_time_used = (((double)(end_time - start_time)) ) + cpu_time_used;  
+    printf("Total time for thread %d is %f seconds\n", id, cpu_time_used);      
   }   
   size_t my_best_path[1];
   my_best_path[0] = 0;
