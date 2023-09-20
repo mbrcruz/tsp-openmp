@@ -14,3 +14,5 @@ tsp-openmp.o : tsp-openmp.c
 
 clean:
 	rm tsp-openmp tsp-openmp.o
+cleanr:
+	rm OpenMP-*.o*

@@ -1,4 +1,4 @@
-Numero de thread 0
+Numero de thread 1
 Numero de thread 0 - generation = 0
 Numero de thread 0 - generation = 1000
 Numero de thread 0 - generation = 2000
@@ -119,12 +119,13 @@ Numero de thread 0 - generation = 116000
 Numero de thread 0 - generation = 117000
 Numero de thread 0 - generation = 118000
 Numero de thread 0 - generation = 119000
-id=0 - bestfit=0.713525 
-tasks=1
-best id=0 - the bestfit=0.713525 
-Process 0 has a final best fitness of 0.713525.
-Fitness of the best route found is 0.713525.
-The best route found is 
-real	26m4.631s
-user	25m40.888s
-sys	0m22.224s
+id=0 - bestfit=1046.896362 
+Total time for 0 is 812.481021 seconds
+best id=0 - the bestfit=1046.896362 
+Process 0 has a final best fitness of 1046.896362.
+Fitness of the best route found is 1046.896362.
+Total time for the program is 812.563008 seconds
+
+real	13m32.612s
+user	13m20.128s
+sys	0m11.964s
