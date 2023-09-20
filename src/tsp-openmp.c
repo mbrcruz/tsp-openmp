@@ -344,8 +344,7 @@ int main(int argc, char *argv[]) {
   {
     // Initialize a population from random paths
     double start_time,end_time,cpu_time_used;
-    start_time = omp_get_wtime();
-    id = omp_get_thread_num();
+    start_time = omp_get_wtime();   
     if ( id == 0){
       ntasks=omp_get_num_threads();
       printf("Numero de thread %d\n", ntasks);
@@ -372,8 +371,7 @@ int main(int argc, char *argv[]) {
     for (size_t i = 0; i < n_generations; ++i) 
     {
       
-      start_time = omp_get_wtime();
-      id = omp_get_thread_num();
+      // start_time = omp_get_wtime();      
       // Check pops want to emigrate
       if (rand_p() < migration_prob) {
         // Emigrants and immigrants need to be allocated contiguously for MPI
@@ -393,14 +391,8 @@ int main(int argc, char *argv[]) {
         } else if (!prev && id == ntasks - 1) {
           target_id = 0;
         }
-        has_immigrants = 1;
-        // MPI_Request req;
-        // MPI_Isend(&(emigrants[0][0]), n_cities * migration_size, MPI_UNSIGNED_SHORT, target_id, 42, MPI_COMM_WORLD, &req);
-        
-      }
-
-      // Check if some pops want to immigrate
-      // MPI_Status status;
+        has_immigrants = 1;        
+      }    
       
       // MPI_Iprobe(MPI_ANY_SOURCE, 42, MPI_COMM_WORLD, &has_immigrants, &status);
       if (has_immigrants) {
@@ -451,9 +443,9 @@ int main(int argc, char *argv[]) {
     v_best_fit[id]= best_fit;
     printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
     v_my_best_path[id]= my_best_path[0];      
-    end_time = omp_get_wtime();
-    cpu_time_used = (((double)(end_time - start_time)) ) + cpu_time_used;  
-    printf("Total time for %d is %f seconds\n", id, cpu_time_used);      
+    // end_time = omp_get_wtime();
+    // cpu_time_used = (((double)(end_time - start_time)) ) + cpu_time_used;  
+    // printf("Total time for %d is %f seconds\n", id, cpu_time_used);      
   }   
   size_t my_best_path[1];
   my_best_path[0] = 0;
