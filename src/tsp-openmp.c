@@ -458,13 +458,12 @@ int main(int argc, char *argv[]) {
     v_my_best_path[id]= my_best_path[0];   
     //end_time = clock();
     //cpu_time_used = (((double)(end_time - start_time)) / CLOCKS_PER_SEC) + cpu_time_used;
-    printf("Total time for %d is %f seconds\n", id,cpu_time_used);    
+    printf("Total time for %d is %f seconds\n", id, cpu_time_used);    
   } 
   start_time = omp_get_wtime();
   size_t my_best_path[1];
   my_best_path[0] = 0;
-  int best_id=0;
-  printf("tasks=%d\n", ntasks);
+  int best_id=0;  
   for(int i=0;i<ntasks;i++){
     if ( v_best_fit[i] < v_best_fit[best_id]){
       best_id=i;
@@ -477,7 +476,7 @@ int main(int argc, char *argv[]) {
   printf("best id=%d - the bestfit=%f \n", best_id , v_best_fit[best_id]);
   printf("Process %d has a final best fitness of %f.\n", best_id, v_best_fit[best_id]);   
   printf("Fitness of the best route found is %f.\n", v_best_fit[best_id]);
-  printf("The best route found is \n");
+  //printf("The best route found is ");
   // for (size_t i = 0; i < n_cities; ++i) {
   //   printf("%d", pops[my_best_path[0]][i]);
   //   if (i < n_cities - 1)
