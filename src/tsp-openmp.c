@@ -343,7 +343,7 @@ int main(int argc, char *argv[]) {
   ReadCoords(infile, n_cities, coords);
   end_time = omp_get_wtime();
   cpu_time_used = (double)(end_time - start_time);  
-  #pragma omp parallel default(private) shared(v_my_best_path,v_best_fit,ntasks)
+  #pragma omp parallel default(none) shared(v_my_best_path,v_best_fit,ntasks)
   {
     // Initialize a population from random paths
     start_time = omp_get_wtime();
