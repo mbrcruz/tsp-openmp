@@ -473,10 +473,9 @@ int main(int argc, char *argv[]) {
   }
  
   
-  my_best_path[0] = v_my_best_path[best_id];
-  printf("best id=%d - the bestfit=%f \n", best_id , v_best_fit[best_id]);
+  my_best_path[0] = v_my_best_path[best_id]; 
   printf("Process %d has a final best fitness of %f.\n", best_id, v_best_fit[best_id]);   
-  printf("Fitness of the best route found is %f.\n", v_best_fit[best_id]);
+  //printf("Fitness of the best route found is %f.\n", v_best_fit[best_id]);
   //printf("The best route found is ");
   // for (size_t i = 0; i < n_cities; ++i) {
   //   printf("%d", pops[my_best_path[0]][i]);
