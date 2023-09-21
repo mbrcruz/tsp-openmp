@@ -302,7 +302,7 @@ int main(int argc, char *argv[]) {
   int id=0,ntasks=1;  
   
   double start_time_total,end_time_total,cpu_time_used_total;
-  start_time_total =omp_get_wtime(); 
+  //start_time_total =omp_get_wtime(); 
   
   
 
@@ -340,10 +340,10 @@ int main(int argc, char *argv[]) {
   n_cities = CountLines(infile);
   coords = (coord *)malloc(n_cities * sizeof(coord));
   ReadCoords(infile, n_cities, coords);  
-  #pragma omp parallel default(shared) firstprivate(id) 
+  #pragma omp parallel default(none) firstprivate(id) shared(v_my_best_path,v_best_fit,pop_size,n_cities,n_generations,migration_size,coords,mutation_prob,migration_prob,ntasks) 
   {
     // Initialize a population from random paths
-    double start_time,end_time,cpu_time_used;
+    //double start_time,end_time,cpu_time_used;
     //start_time = omp_get_wtime();   
     id = omp_get_thread_num();
     if ( id == 0){
@@ -373,7 +373,7 @@ int main(int argc, char *argv[]) {
     for (size_t i = 0; i < n_generations; ++i) 
     {
       
-      start_time = omp_get_wtime();      
+      //start_time = omp_get_wtime();      
       // Check pops want to emigrate
       if (rand_p() < migration_prob) {
         // Emigrants and immigrants need to be allocated contiguously for MPI
@@ -438,8 +438,8 @@ int main(int argc, char *argv[]) {
         printf("Process %d generation %zu\n", id, i + 1);
         FitnessStatus(pops, coords, pop_size, n_cities);
       }  
-      end_time = omp_get_wtime();
-      cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
+      // end_time = omp_get_wtime();
+      // cpu_time_used = (((double)(end_time - start_time))) + cpu_time_used;     
     }
     //start_time = omp_get_wtime();       
     size_t my_best_path[1];
@@ -450,7 +450,7 @@ int main(int argc, char *argv[]) {
     v_my_best_path[id]= my_best_path[0];      
     // end_time = omp_get_wtime();
     // cpu_time_used = (((double)(end_time - start_time)) ) + cpu_time_used;  
-    printf("Total time for thread %d is %f seconds\n", id, cpu_time_used);      
+    //printf("Total time for thread %d is %f seconds\n", id, cpu_time_used);      
   }   
   size_t my_best_path[1];
   my_best_path[0] = 0;
@@ -475,11 +475,11 @@ int main(int argc, char *argv[]) {
   // } 
   // printf(".\n"); 
   
-  if (id == 0){
-    end_time_total = omp_get_wtime();
-    cpu_time_used_total = ((double)(end_time_total - start_time_total));
-    printf("Total time for the program is %f seconds\n", cpu_time_used_total);
-  }
+  // if (id == 0){
+  //   end_time_total = omp_get_wtime();
+  //   cpu_time_used_total = ((double)(end_time_total - start_time_total));
+  //   printf("Total time for the program is %f seconds\n", cpu_time_used_total);
+  // }
 
   return 0;
 }
