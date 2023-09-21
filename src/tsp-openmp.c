@@ -484,12 +484,10 @@ int main(int argc, char *argv[]) {
   // } 
   // printf(".\n"); 
   
-  #ifdef PRINT
-  if (id == 0){
-    end_time_total = omp_get_wtime();
-    cpu_time_used_total = ((double)(end_time_total - start_time_total));
-    printf("Total time for the program is %f seconds\n", cpu_time_used_total);
-  }
+  #ifdef PRINT  
+  end_time_total = omp_get_wtime();
+  cpu_time_used_total = ((double)(end_time_total - start_time_total));
+  printf("Total time for the program is %f seconds\n", cpu_time_used_total);
   #endif
 
   return 0;
