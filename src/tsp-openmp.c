@@ -455,8 +455,7 @@ int main(int argc, char *argv[]) {
     size_t my_best_path[1];
     my_best_path[0] = 0;
     float best_fit = BestFit(pops, coords, pop_size, n_cities, my_best_path);    
-    v_best_fit[id]= best_fit;
-    printf("id=%d - bestfit=%f \n", id , v_best_fit[id]);
+    v_best_fit[id]= best_fit;   
     v_my_best_path[id]= my_best_path[0];  
     #ifdef PRINT    
     end_time = omp_get_wtime();
@@ -469,8 +468,7 @@ int main(int argc, char *argv[]) {
   int best_id=0;  
   for(int i=0;i<ntasks;i++){
     if ( v_best_fit[i] < v_best_fit[best_id]){
-      best_id=i;
-      printf("bestid=%d\n", i);
+      best_id=i;     
     }
   }
  
