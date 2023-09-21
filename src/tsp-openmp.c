@@ -340,7 +340,7 @@ int main(int argc, char *argv[]) {
   n_cities = CountLines(infile);
   coords = (coord *)malloc(n_cities * sizeof(coord));
   ReadCoords(infile, n_cities, coords);  
-  #pragma omp parallel default(none) firstprivate(id) shared(v_my_best_path,v_best_fit,pop_size,n_cities,n_generations,migration_size,coords,mutation_prob,migration_prob,ntasks) 
+  #pragma omp parallel default(shared) firstprivate(id) 
   {
     // Initialize a population from random paths
     double start_time,end_time,cpu_time_used;
