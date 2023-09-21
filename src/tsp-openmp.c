@@ -301,7 +301,7 @@ void check_input(float mutation_prob, size_t pop_size, float migration_prob, siz
 int main(int argc, char *argv[]) {
   int id=0,ntasks=1;  
   
-  #ifdef PRINt
+  #ifdef PRINT
   double start_time_total,end_time_total,cpu_time_used_total;  
   start_time_total =omp_get_wtime(); 
   #endif  
