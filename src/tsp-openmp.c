@@ -442,7 +442,7 @@ int main(int argc, char *argv[]) {
       //Uncomment for periodic updates
       if ((i % 1000) == 0) {
         printf("Process %d generation %zu\n", id, i + 1);
-        FitnessStatus(pops, coords, pop_size, n_cities);
+        //FitnessStatus(pops, coords, pop_size, n_cities);
       }  
       #ifdef PRINT
       end_time = omp_get_wtime();
