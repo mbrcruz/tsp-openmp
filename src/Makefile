@@ -1,4 +1,4 @@
-CCFLAGS=-fopenmp -O3
+CCFLAGS=-fopenmp -O3 -DPRINT
 LDFLAGS=-fopenmp -O3
 CC=icpc
 

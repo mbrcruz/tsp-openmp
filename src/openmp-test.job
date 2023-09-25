@@ -1,16 +1,16 @@
 #!/bin/bash
-#PBS -l select=1:ncpus=48:ompthreads=16
+#PBS -l select=1:ncpus=4:ompthreads=2
 #PBS -l walltime=01:00:00
 #PBS -j oe
 #PBS -V
-#PBS -N OpenMP-16th
+#PBS -N OpenMP-test
 
 # load modules
 module load intel
 # change directory
 cd ${PBS_O_WORKDIR}
 # environment (if necessary)
-export OMP_NUM_THREADS=16
+export OMP_NUM_THREADS=2
 #export export GOMP_CPU_AFFINITY="0,1,2,4,5,6,6,8,9,10,11,12,13,14,15,16,16,18,19,20,21,22,23"
 # run
-time /home/users/mbrcruz23/tsp-openmp/src/tsp-openmp /home/users/mbrcruz23/tsp-openmp/run/input.dat 0.75 128000 10000 0.00 100
+time /home/users/mbrcruz23/tsp-openmp/src/tsp-openmp /home/users/mbrcruz23/tsp-openmp/run/input.dat 0.75 10000 10000 0.00 100

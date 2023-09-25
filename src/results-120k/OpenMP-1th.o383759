@@ -1,0 +1,998 @@
+rodada=1
+Numero de thread 1
+Process 0 generation 1
+best path: 11,4,6,5,14,13,7,15,1,0,2,3,12,8,9,10 fitness: 1342.952393
+Process 0 generation 1001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 2001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 3001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 4001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 5001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 6001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 7001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 8001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 9001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 10001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 11001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 12001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 13001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 14001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 15001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 16001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 17001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 18001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 19001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 20001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 21001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 22001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 23001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 24001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 25001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 26001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 27001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 28001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 29001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 30001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 31001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 32001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 33001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 34001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 35001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 36001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 37001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 38001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 39001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 40001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 41001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 42001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 43001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 44001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 45001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 46001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 47001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 48001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 49001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 50001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 51001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 52001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 53001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 54001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 55001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 56001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 57001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 58001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 59001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 60001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 61001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 62001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 63001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 64001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 65001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 66001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 67001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 68001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 69001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 70001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 71001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 72001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 73001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 74001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 75001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 76001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 77001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 78001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 79001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 80001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 81001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 82001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 83001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 84001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 85001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 86001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 87001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 88001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 89001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 90001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 91001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 92001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 93001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 94001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 95001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 96001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 97001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 98001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 99001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 100001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 101001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 102001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 103001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 104001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 105001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 106001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 107001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 108001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 109001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 110001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 111001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 112001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 113001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 114001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 115001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 116001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 117001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 118001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 119001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Total time for thread 0 is 799.555269 seconds
+Process 0 has a final best fitness of 1045.013672.
+Total time for the program is 799.583759 seconds
+
+real	13m19.607s
+user	13m10.864s
+sys	0m8.304s
+rodada=2
+Numero de thread 1
+Process 0 generation 1
+best path: 10,8,9,6,4,5,14,7,15,2,1,3,13,0,12,11 fitness: 1415.353149
+Process 0 generation 1001
+best path: 11,4,14,12,15,0,2,1,3,7,13,5,6,9,8,10 fitness: 1046.896362
+Process 0 generation 2001
+best path: 11,4,14,12,15,0,2,1,3,7,13,5,6,9,8,10 fitness: 1046.896362
+Process 0 generation 3001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 4001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 5001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 6001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 7001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 8001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 9001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 10001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 11001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 12001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 13001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 14001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 15001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 16001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 17001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 18001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 19001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 20001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 21001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 22001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 23001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 24001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 25001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 26001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 27001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 28001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 29001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 30001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 31001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 32001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 33001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 34001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 35001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 36001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 37001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 38001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 39001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 40001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 41001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 42001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 43001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 44001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 45001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 46001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 47001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 48001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 49001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 50001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 51001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 52001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 53001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 54001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 55001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 56001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 57001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 58001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 59001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 60001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 61001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 62001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 63001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 64001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 65001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 66001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 67001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 68001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 69001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 70001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 71001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 72001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 73001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 74001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 75001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 76001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 77001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 78001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 79001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 80001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 81001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 82001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 83001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 84001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 85001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 86001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 87001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 88001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 89001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 90001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 91001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 92001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 93001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 94001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 95001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 96001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 97001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 98001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 99001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 100001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 101001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 102001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 103001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 104001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 105001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 106001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 107001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 108001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 109001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 110001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 111001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 112001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 113001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 114001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 115001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 116001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 117001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 118001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Process 0 generation 119001
+best path: 11,4,14,13,7,3,1,2,0,15,12,5,6,9,8,10 fitness: 1045.013672
+Total time for thread 0 is 800.993343 seconds
+Process 0 has a final best fitness of 1045.013672.
+Total time for the program is 801.005069 seconds
+
+real	13m21.014s
+user	13m12.592s
+sys	0m8.012s
+rodada=3
+Numero de thread 1
+Process 0 generation 1
+best path: 10,8,12,1,0,3,2,7,4,6,5,13,9,15,14,11 fitness: 1493.228271
+Process 0 generation 1001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 2001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 3001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 4001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 5001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 6001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 7001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 8001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 9001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 10001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 11001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 12001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 13001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 14001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 15001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 16001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 17001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 18001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 19001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 20001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 21001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 22001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 23001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 24001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 25001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 26001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 27001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 28001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 29001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 30001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 31001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 32001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 33001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 34001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 35001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 36001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 37001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 38001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 39001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 40001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 41001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 42001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 43001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 44001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 45001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 46001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 47001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 48001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 49001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 50001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 51001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 52001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 53001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 54001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 55001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 56001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 57001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 58001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 59001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 60001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 61001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 62001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 63001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 64001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 65001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 66001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 67001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 68001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 69001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 70001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 71001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 72001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 73001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 74001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 75001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 76001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 77001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 78001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 79001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 80001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 81001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 82001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 83001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 84001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 85001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 86001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 87001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 88001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 89001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 90001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 91001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 92001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 93001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 94001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 95001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 96001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 97001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 98001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 99001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 100001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 101001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 102001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 103001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 104001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 105001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 106001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 107001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 108001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 109001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 110001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 111001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 112001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 113001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 114001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 115001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 116001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 117001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 118001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 119001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Total time for thread 0 is 799.030773 seconds
+Process 0 has a final best fitness of 1045.013672.
+Total time for the program is 799.048500 seconds
+
+real	13m19.056s
+user	13m10.660s
+sys	0m7.984s
+rodada=4
+Numero de thread 1
+Process 0 generation 1
+best path: 11,4,6,12,14,5,15,7,13,0,1,2,3,9,8,10 fitness: 1249.229126
+Process 0 generation 1001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 2001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 3001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 4001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 5001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 6001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 7001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 8001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 9001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 10001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 11001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 12001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 13001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 14001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 15001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 16001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 17001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 18001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 19001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 20001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 21001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 22001
+best path: 10,8,9,6,5,13,7,3,1,2,0,15,12,14,4,11 fitness: 1046.896484
+Process 0 generation 23001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 24001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 25001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 26001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 27001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 28001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 29001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 30001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 31001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 32001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 33001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 34001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 35001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 36001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 37001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 38001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 39001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 40001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 41001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 42001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 43001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 44001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 45001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 46001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 47001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 48001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 49001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 50001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 51001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 52001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 53001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 54001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 55001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 56001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 57001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 58001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 59001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 60001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 61001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 62001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 63001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 64001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 65001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 66001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 67001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 68001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 69001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 70001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 71001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 72001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 73001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 74001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 75001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 76001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 77001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 78001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 79001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 80001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 81001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 82001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 83001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 84001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 85001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 86001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 87001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 88001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 89001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 90001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 91001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 92001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 93001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 94001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 95001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 96001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 97001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 98001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 99001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 100001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 101001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 102001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 103001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 104001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 105001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 106001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 107001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 108001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 109001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 110001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 111001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 112001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 113001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 114001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 115001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 116001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 117001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 118001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Process 0 generation 119001
+best path: 10,8,9,6,5,12,15,0,2,1,3,7,13,14,4,11 fitness: 1045.013672
+Total time for thread 0 is 799.371909 seconds
+Process 0 has a final best fitness of 1045.013672.
+Total time for the program is 799.390333 seconds
+
+real	13m19.399s
+user	13m10.960s
+sys	0m8.024s
+rodada=5
+=>> PBS: job killed: walltime 3633 exceeded limit 3600
